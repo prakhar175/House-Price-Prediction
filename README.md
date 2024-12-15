@@ -51,16 +51,31 @@ matplotlib
 - Fits the model using `RandomForestRegressor`.
 - Calculates feature importances.
 - Evaluates using RMSE, R-squared, and MAE.
+## Hyperparameter Tuning
+
+### Random Forest Regressor - GridSearchCV
+
+Used `GridSearchCV` to tune hyperparameters for the Random Forest Regressor. Key parameters to tune include:
+- `n_estimators`: Number of trees in the forest.
+- `max_depth`: Maximum depth of the trees.
+- `min_samples_split`: Minimum samples required to split an internal node.
+- `min_samples_leaf`: Minimum samples required at a leaf node.
+
+GridSearchCV will help find the best parameter combination by performing cross-validation.
+
+### Polynomial Regression - Degree Adjustment
+
+In Linear Regression, you can improve the model by adding polynomial features. Experiment with different polynomial degrees to capture non-linear relationships and find the optimal degree for your dataset.
 
 ## Results
 
 ### Linear Regression
-- **Root Mean Squared Error**:    `27.54702361737279`
-- **R-squared**:   `0.7302529920850762`
-- **Mean Absolute Error**:    `21.367712812574894`
+- **Root Mean Squared Error**:    `22.954355501747365`
+- **R-squared**:   `0.8127001281522502`
+- **Mean Absolute Error**:    `17.441181640625`
 
 ### Random Forest Regressor
-- **Root Mean Squared Error**:    `20.846111018796346`
-- **R-squared**:    `0.845525298011988`
-- **Mean Absolute Error**:   `15.495057719298245`
+- **Root Mean Squared Error**:    `17.64257036741746`
+- **R-squared**:    `0.8923273302794676`
+- **Mean Absolute Error**:   `13.051423306745969`
 
