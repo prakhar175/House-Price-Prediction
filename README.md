@@ -75,7 +75,7 @@ In Linear Regression, you can improve the model by adding polynomial features. E
 - **Mean Absolute Error**:    `17.441181640625`
 
 ### Random Forest Regressor
-- **Root Mean Squared Error**:    `17.64257036741746`
-- **R-squared**:    `0.8923273302794676`
-- **Mean Absolute Error**:   `13.051423306745969`
+- **Root Mean Squared Error**:    `14.196656069650404`
+- **R-squared**:    `0.9302805604693182`
+- **Mean Absolute Error**:   `10.808329939948894`
 
